@@ -28,6 +28,12 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# TEMPLATE_DIRS = (
+#     'E:/Python projects/blog_django/templates',
+# )
+# TEMPLATE_DIRS = (BASE_DIR, 'templates')
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -107,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 

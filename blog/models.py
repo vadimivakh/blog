@@ -10,5 +10,12 @@ class Post(models.Model):
     post_title = models.CharField(max_length = 100)
     post_text = models.TextField()
     post_data = models.DateTimeField()
-    post_likes = models.IntegerField()
+    post_likes = models.IntegerField(default=0)
+
+class Comment(models.Model):
+    class Meta:
+        db_table = "comments"
+
+    comment_text = models.TextField()
+    comment_post = models.ForeignKey(Post)
 
