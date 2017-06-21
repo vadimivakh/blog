@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Post_by_id</title>
-</head>
-<body>
+{% extends 'main.html' %}
+{% block post %}
+
 <h4>{{ post.post_data }}</h4>
 <h6> {{ post.post_title }} </h6>
 <p> {{ post.post_text }} </p>
 <hr>
-
 <p>Comments:</p>
 {% for comment in comments %}
     <p>{{ comment.comment_text }}</p>
 {% endfor %}
-</body>
-</html>
+{% endblock %}

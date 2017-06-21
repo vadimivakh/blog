@@ -5,13 +5,8 @@ from django.shortcuts import render_to_response
 from blog.models import Post, Comment
 
 
-def basic_one(request):
-    return HttpResponse('ok')
-
-
-def basic_two(request):
-    context = {'name': 'template_two'}
-    return render_to_response('main.html', context)
+def index(request):
+    return render_to_response('main.html')
 
 
 def all_posts(request):
