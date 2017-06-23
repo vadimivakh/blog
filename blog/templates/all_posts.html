@@ -1,11 +1,12 @@
 {% extends 'main.html' %}
-{% block post %}
+{% load staticfiles %}
 
+{% block post %}
 {% for post in posts %}
     <h6> {{ post.post_data }} </h6>
-    <h4> <a href="/post/get/{{ post.id }}">{{ post.post_title }}</a></h4>
+    <h4> <a href="/posts/{{ post.id }}">{{ post.post_title }}</a></h4>
     <p> {{ post.post_text }} </p>
-    <p> Likes: {{ post.post_likes }} </p>
+    <p><a href="/posts/addlike/{{ post.id }}"> <img src="{% static "like_img.jpg" %}" width="45pcx" height="25pcx" %}></a> {{ post.post_likes }} </p>
     <hr>
 {%endfor%}
 {% endblock %}
