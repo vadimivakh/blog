@@ -5,8 +5,14 @@
 <h4> {{ post.post_title }} </h4>
 <p> {{ post.post_text }} </p>
 <hr>
-<p>Comments:</p>
+<p><h4>Comments:</h4></p>
 {% for comment in comments %}
     <p>{{ comment.comment_text }}</p>
 {% endfor %}
+<br> <br>
+<form action="/posts/addcomment/{{ post.id }}/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <p><input type="submit" type="button" value="Add comment"></p>
+</form>
 {% endblock %}
