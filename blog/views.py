@@ -9,7 +9,7 @@ from django.template.context_processors import csrf
 
 
 def all_posts(request):
-    return render_to_response('all_posts.html', {'posts': Post.objects.all()})
+    return render_to_response('all_posts.html', {'posts': Post.objects.all().order_by('-post_data')})
 
 
 # def post_by_id(request, post_id=1):
