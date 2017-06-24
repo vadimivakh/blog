@@ -6,14 +6,14 @@ from blog.models import Post, Comment
 from django.core.exceptions import ObjectDoesNotExist
 from blog.forms import CommentForm
 from django.template.context_processors import csrf
-
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.template import RequestContext
+from django.views.generic import ListView
+from django.contrib import auth
 
 def all_posts(request):
-    return render_to_response('all_posts.html', {'posts': Post.objects.all().order_by('-post_data')})
+    return render_to_response('all_posts.html', {'posts': Post.objects.all().order_by('-post_data'), 'username': auth.get_user(request).username})
 
-
-# def post_by_id(request, post_id=1):
-#     return render_to_response('post_by_id.html', {'post': Post.objects.get(id=post_id), 'comments': Comment.objects.filter(comment_post_id=post_id)})
 
 def post_by_id(request, post_id):
     comment_form = CommentForm
@@ -22,6 +22,7 @@ def post_by_id(request, post_id):
     args['post'] = Post.objects.get(id=post_id)
     args['comments'] = Comment.objects.filter(comment_post_id=post_id)
     args['form'] = comment_form
+    args['username'] = auth.get_user(request).username
     return render_to_response('post_by_id.html', args)
 
 def add_like(request, post_id):
@@ -42,3 +43,6 @@ def add_comment(request, post_id):
             comment.comment_post=Post.objects.get(id=post_id)
             form.save()
     return redirect('/posts/{}/'.format(post_id))
+
+def login(request):
+    return render_to_response('login.html')

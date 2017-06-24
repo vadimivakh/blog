@@ -11,9 +11,16 @@
     <p>{{ comment.comment_text }}</p>
 {% endfor %}
 <br> <br>
+<strong>Add your comment here:</strong>
+{% if username %}
+<br><br>
 <form action="/posts/addcomment/{{ post.id }}/" method="post">
     {% csrf_token %}
     {{ form }}
-    <p><input type="submit" class="btn btn-primary" value="Add comment"></p>
+    <p><input type="submit" class="btn btn-primary btn-sm" value="Add comment"></p>
 </form>
+{% else %}
+<br><br>
+<small><p>You can't write comment, you should login or register</p></small>
+{% endif %}
 {% endblock %}

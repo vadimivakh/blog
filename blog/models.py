@@ -26,6 +26,6 @@ class Comment(models.Model):
     class Meta:
         db_table = "comments"
 
-    comment_text = models.TextField(verbose_name="Add your comment here:")
+    comment_text = models.TextField(verbose_name=None)
     comment_post = models.ForeignKey(Post)
 
