@@ -12,7 +12,21 @@ from django.views.generic import ListView
 from django.contrib import auth
 
 def all_posts(request):
-    return render_to_response('all_posts.html', {'posts': Post.objects.all().order_by('-post_data'), 'username': auth.get_user(request).username})
+    username = auth.get_user(request).username
+    post_list = Post.objects.all().order_by('-post_data')
+    paginator = Paginator(post_list, 3)
+
+    page = request.GET.get('page')
+    try:
+        posts = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        posts = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        posts = paginator.page(paginator.num_pages)
+
+    return render_to_response('all_posts.html', {"posts": posts, "username": username})
 
 
 def post_by_id(request, post_id):

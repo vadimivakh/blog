@@ -8,9 +8,11 @@
     <br>
     <label for="password">Password: </label>
     <input type="password" name="password" id="password">
-    {% if login_error %}
-    <label class="error" {{ login_error }}></label>
-    {% endif %}
-    <input class="button" type="submit" value="SignIn">
 
+    {% if login_error %}
+      <label class="error: " {{ login_error }}></label>
+    {% endif %}
+
+    <input class="button" type="submit" value="SignIn">
+    <a href="/auth/register">Registration</a>
 {% endblock %}
