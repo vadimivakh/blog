@@ -13,6 +13,15 @@
     <hr>
 {%endfor%}
 
+{% if username %}
+<p>You can add your own post here:</p>
+<br><br>
+<form action="/posts/addpost/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <p><input type="submit" class="btn btn-primary btn-sm" value="Add post"></p>
+</form>
+{% endif %}
 
 <div class="class="col-md-12"><div class="top-cover center-block"></div><p class="top-name center-block text-center">
     {% if posts.has_previous %}

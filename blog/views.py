@@ -4,7 +4,7 @@ from django.http.response import HttpResponse, Http404
 from django.shortcuts import render_to_response, redirect
 from blog.models import Post, Comment
 from django.core.exceptions import ObjectDoesNotExist
-from blog.forms import CommentForm
+from blog.forms import CommentForm, PostForm
 from django.template.context_processors import csrf
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.template import RequestContext
@@ -12,21 +12,23 @@ from django.views.generic import ListView
 from django.contrib import auth
 
 def all_posts(request):
-    username = auth.get_user(request).username
     post_list = Post.objects.all().order_by('-post_data')
     paginator = Paginator(post_list, 3)
-
     page = request.GET.get('page')
     try:
         posts = paginator.page(page)
     except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
         posts = paginator.page(1)
     except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
         posts = paginator.page(paginator.num_pages)
 
-    return render_to_response('all_posts.html', {"posts": posts, "username": username})
+    form = PostForm(request.POST)
+    context = {}
+    context.update(csrf(request))
+    context['username'] = auth.get_user(request).username
+    context['posts'] = posts
+    context['form'] = form
+    return render_to_response('all_posts.html', context)
 
 
 def post_by_id(request, post_id):
@@ -57,6 +59,19 @@ def add_comment(request, post_id):
             comment.comment_post=Post.objects.get(id=post_id)
             form.save()
     return redirect('/posts/{}/'.format(post_id))
+
+
+def add_post(request):
+    if request.POST:
+        form = PostForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            # post = form.save(commit=False)
+            # post.comment_post=Post.objects.get(id=post_id)
+            # form.save()
+    return redirect('/', RequestContext(request))
+
 
 def login(request):
     return render_to_response('login.html')

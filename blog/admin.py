@@ -10,9 +10,10 @@ class PostInLine(admin.StackedInline):
 
 
 class PostAdmin(admin.ModelAdmin):
-    fields = ['post_title', 'post_text', 'post_data']
+    fields = ['post_title', 'post_text', 'post_img']
     inlines = [PostInLine]
     list_filter = ['post_data']
+
 
 admin.site.register(Post, PostAdmin)
 # admin.site.register(Comment)

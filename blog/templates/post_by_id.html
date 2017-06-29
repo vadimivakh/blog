@@ -5,6 +5,12 @@
 <mark>Date: <small>{{ post.post_data }}</mark> </small>
 <h4> {{ post.post_title }} </h4>
 <p class="text-justify"> {{ post.post_text }} </p>
+<br>
+{% if post.post_img %}
+<img src="{{MEDIA_URL}}{{post.post_img.url}}" height="250" width="250">
+
+{% endif %}
+
 <hr>
 <p><h4>Comments:</h4></p>
 {% for comment in comments %}
