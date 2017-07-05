@@ -1,6 +1,8 @@
 from django.shortcuts import render_to_response, redirect
 from django.template.context_processors import csrf
 from django.contrib import auth
+# from loginsys.forms import UserRegistrationForm
+from django.contrib.auth.forms import UserCreationForm
 
 def login(request):
     args = {}
@@ -18,9 +20,30 @@ def login(request):
     else:
         return render_to_response('login.html', args)
 
+
 def logout(request):
     auth.logout(request)
-    return redirect('/')
+    return_path = request.META.get('HTTP_REFERER', '/')
+    return redirect(return_path)
+
 
 def register(request):
-    pass
+    print('start')
+    args = {}
+    args.update(csrf(request))
+    args['form'] = UserCreationForm()
+
+
+    if request.POST:
+        print('post')
+        new_user_form = UserCreationForm(request.POST or None)
+        print (new_user_form.is_valid(), new_user_form.errors, type(new_user_form.errors))
+        if new_user_form.is_valid():
+            print('valid')
+            new_user_form.save()
+            new_user = auth.authenticate(username=new_user_form.cleaned_data['username'],
+                                         password=new_user_form.cleaned_data['password1'])
+            auth.login(request, new_user)
+            print('here')
+            return redirect('/')
+    return render_to_response('register.html', args)
