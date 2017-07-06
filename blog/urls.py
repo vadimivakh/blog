@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^posts/addcomment/(?P<post_id>[0-9]+)/$', views.add_comment),
     url(r'^posts/addpost/$', views.add_post),
     url(r'^login/$', views.login),
+    url(r'^posts/editpost/(?P<post_id>[0-9]+)/$', views.edit_post),
 ]
 
 if settings.DEBUG:

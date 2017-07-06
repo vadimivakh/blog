@@ -3,20 +3,28 @@
 
 <br><br>
 <mark>Date: <small>{{ post.post_data }}</mark> </small>
-<h4> {{ post.post_title }} </h4>
+<h4 aligh="center"> {{ post.post_title }} </h4>
 <p class="text-justify"> {{ post.post_text }} </p>
 <br>
 {% if post.post_img %}
 <img src="{{MEDIA_URL}}{{post.post_img.url}}" height="250" width="250">
 
 {% endif %}
-
+<br><br>
+{% if post_creator %}
+<a href="/posts/editpost/{{post.id}}" class="btn active" role="button" >Edit post</a>
+{% else %}
+<a href="" class="btn disabled" role="button" >Edit post</a>
+{% endif %}
 <hr>
+
 <p><h4>Comments:</h4></p>
 {% for comment in comments %}
     <p>{{ comment.comment_text }}</p>
+<a href="/" class="btn active" role="button">Edit comment</a>
 <hr>
 <p align="right"> {{ comment.comment_author.username }} - {{ comment.comment_date }} </p>
+
 {% endfor %}
 <br> <br>
 <strong>Add your comment here:</strong>

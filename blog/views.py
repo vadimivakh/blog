@@ -44,7 +44,12 @@ def post_by_id(request, post_id):
     args['comments'] = Comment.objects.filter(comment_post_id=post_id)
     args['form'] = comment_form
     args['username'] = auth.get_user(request).username
-
+    args['post_creator'] = False
+    if str(auth.get_user(request).username) == str(Post.objects.get(id=post_id).post_author):
+        args['post_creator'] = True
+    # args['comment_creator'] = False
+    # if str(auth.get_user(request).username) == str(Comment.objects.filter(comment_post_id=post_id).comment_author):
+    #     args['comment_creator'] = True
     return render_to_response('post_by_id.html', args)
 
 
@@ -76,6 +81,17 @@ def add_post(request):
 def login(request):
     return render_to_response('login.html')
 
+
+def edit_post(request, post_id):
+    args = {}
+    post = Post.objects.get(id=post_id)
+    args['form'] = PostForm(instance=post)
+
+    if request.POST:
+        if form.is_valid():
+            form.save()
+
+    return render_to_response('edit_post.html', args)
 
 # def add_like(request, post_id):
 #     try:
