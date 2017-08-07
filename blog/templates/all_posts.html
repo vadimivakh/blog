@@ -2,17 +2,19 @@
 {% load staticfiles %}
 
 {% block post %}
+{% if posts %}
 {% for post in posts %}
     <br>
-    <mark>Date: <small> {{ post.post_data }} </mark> </small>
+    <mark>Posted: <small> {{ post.post_data }} </mark> </small>
     <p>Author: {{ post.post_author }} </p>
+    <p>Tags: </p>
     <h4> <a href="/posts/{{ post.id }}">{{ post.post_title }}</a></h4>
     <p class="text-justify"> {{ post.post_text|linebreaks|truncatewords:50 }} <strong><a class="text-info" href="/posts/{{ post.id }}"> Read more </a></strong> </p>
 <!--{% if username %}-->
     <!--<p><a href="/posts/addlike/{{ post.id }}"> <img src="{% static "like_img.jpg" %}" width="45pcx" height="25pcx" %}></a> {{ post.post_likes }} </p>-->
     <!--<hr>-->
 <!--{% endif %}-->
-<small><p align="left">Views: {{ post.post_views }} </p></small>
+<small><p align="left">Viewed: {{ post.post_views }} times </p></small>
 <hr>
 {% endfor %}
 
@@ -39,5 +41,19 @@
         <a href="?page={{ posts.next_page_number }}">next</a>
     {% endif %}
 </p></div>
+{% else %}
+<p>Sorry, but there is no posts...</p>
 
+{% if username %}
+<p>You can add your own post here:</p>
+<br><br>
+<form enctype="multipart/form-data" action="/posts/addpost/" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p><input type="submit" class="btn btn-primary btn-sm" value="Add post"></p>
+</form>
+{% endif %}
+
+<!--<p><a href="/posts/addpost/">Add new post</a></p>-->
+{% endif %}
 {% endblock %}

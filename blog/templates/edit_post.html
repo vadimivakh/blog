@@ -2,8 +2,7 @@
 {% block post %}
 
 <br><br>
-<form enctype="multipart/form-data" action="/posts/editpost/{{ post.id }}/" method="post">
-    {% csrf_token %}
+<form enctype="multipart/form-data" action="/posts/editpost/{{ post.id }}/" method="post"> {% csrf_token %}
     {{ form.as_p }}
     <p><input type="submit" class="btn btn-primary btn-sm" value="Save"></p>
 </form>

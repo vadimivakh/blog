@@ -136,4 +136,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_URL = r"login"
 
-# AUTH_USER_MODEL = 'loginsys.CustomUser'
+

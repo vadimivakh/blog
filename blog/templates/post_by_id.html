@@ -12,16 +12,14 @@
 {% endif %}
 <br><br>
 {% if post_creator %}
-<a href="/posts/editpost/{{post.id}}" class="btn active" role="button" >Edit post</a>
-{% else %}
-<a href="" class="btn disabled" role="button" >Edit post</a>
+<a href="/posts/editpost/{{post.id}}" class="btn btn-info active" role="button" >Edit post</a>
+<a href="/posts/deletepost/{{post.id}}" class="btn btn-danger active" role="button" >Delete post</a>
 {% endif %}
 <hr>
 
 <p><h4>Comments:</h4></p>
 {% for comment in comments %}
     <p>{{ comment.comment_text }}</p>
-<a href="/" class="btn active" role="button">Edit comment</a>
 <hr>
 <p align="right"> {{ comment.comment_author.username }} - {{ comment.comment_date }} </p>
 
@@ -37,6 +35,6 @@
 </form>
 {% else %}
 <br><br>
-<small><p>You can't write comment, you should login or register</p></small>
+<small><p>You can't write comment, you should <a href="/auth/login/">login</a> or <a href="/auth/register/">register</a></p></small>
 {% endif %}
 {% endblock %}

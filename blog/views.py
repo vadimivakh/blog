@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from django.http.response import HttpResponse, Http404
+from django.http.response import HttpResponse
 from django.shortcuts import render_to_response, redirect
 from blog.models import Post, Comment
-from django.core.exceptions import ObjectDoesNotExist
 from blog.forms import CommentForm, PostForm
 from django.template.context_processors import csrf
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.template import RequestContext
-from django.views.generic import ListView
 from django.contrib import auth
+
 
 def all_posts(request):
     post_list = Post.objects.all().order_by('-post_data')
@@ -25,8 +24,6 @@ def all_posts(request):
     form = PostForm(request.POST)
     context = {}
     context.update(csrf(request))
-    # post.post_author = request.user
-
     context['username'] = auth.get_user(request).username
     context['posts'] = posts
     context['form'] = form
@@ -84,14 +81,24 @@ def login(request):
 
 def edit_post(request, post_id):
     args = {}
+    args.update(csrf(request))
     post = Post.objects.get(id=post_id)
+    args['post'] = post
     args['form'] = PostForm(instance=post)
 
     if request.POST:
+        form = PostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             form.save()
-
+            return redirect('/posts/{}/'.format(post_id))
     return render_to_response('edit_post.html', args)
+
+
+def delete_post(request, post_id):
+    Post.objects.get(id=post_id).delete()
+    Comment.objects.filter(comment_post_id=post_id).delete()
+    return redirect('/')
+
 
 # def add_like(request, post_id):
 #     try:
