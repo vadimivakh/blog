@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.contrib import admin
-from blog.models import Post, Comment, Tag
+from blog.models import Post, Comment
 
 
 class PostInLine(admin.StackedInline):
@@ -16,4 +16,3 @@ class PostAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Post, PostAdmin)
-admin.site.register(Tag)

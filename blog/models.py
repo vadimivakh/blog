@@ -1,14 +1,8 @@
 from __future__ import unicode_literals
 from django.db import models
 from django.contrib.auth.models import User
+from taggit.managers import TaggableManager
 
-
-class Tag(models.Model):
-    name = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.name
-# http://acman.ru/django/kategorii-i-tegi-dlia-bloga-django-1-4/
 
 class Post(models.Model):
     class Meta:
@@ -21,7 +15,7 @@ class Post(models.Model):
     post_likes = models.IntegerField(default=0)
     post_views = models.IntegerField(default=0)
     post_img = models.ImageField(null=True, blank=True, upload_to='images/', verbose_name='Image')
-    post_tag = models.ManyToManyField(Tag)
+    tags = TaggableManager(blank=True, help_text="Tags:")
 
     def __str__(self):
         return self.post_title

@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^login/$', views.login),
     url(r'^posts/editpost/(?P<post_id>[0-9]+)/$', views.edit_post),
     url(r'^posts/deletepost/(?P<post_id>[0-9]+)/$', views.delete_post),
+    url(r'^posts/post_by_tag/tag=(?P<tag_name>\w+)/$', views.post_by_tag),
 ]
 
 if settings.DEBUG:

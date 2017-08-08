@@ -8,6 +8,7 @@ from django.template.context_processors import csrf
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.template import RequestContext
 from django.contrib import auth
+from django.contrib.auth.models import User
 
 
 def all_posts(request):
@@ -27,6 +28,9 @@ def all_posts(request):
     context['username'] = auth.get_user(request).username
     context['posts'] = posts
     context['form'] = form
+    context['post_counter'] = Post.objects.count()
+    context['user_counter'] = User.objects.count()
+    context['user_id'] = request.user.id
     return render_to_response('all_posts.html', context)
 
 
@@ -42,6 +46,7 @@ def post_by_id(request, post_id):
     args['form'] = comment_form
     args['username'] = auth.get_user(request).username
     args['post_creator'] = False
+    args['user_id'] = request.user.id
     if str(auth.get_user(request).username) == str(Post.objects.get(id=post_id).post_author):
         args['post_creator'] = True
     # args['comment_creator'] = False
@@ -100,20 +105,8 @@ def delete_post(request, post_id):
     return redirect('/')
 
 
-# def add_like(request, post_id):
-#     try:
-#         if post_id in request.COOKIES:
-#             return_path = request.META.get('HTTP_REFERER', '/')
-#             return redirect(return_path)
-#         else:
-#             post = Post.objects.get(id = post_id)
-#             post.post_likes += 1
-#             post.save()
-#             return_path = request.META.get('HTTP_REFERER', '/')
-#             response = redirect(return_path)
-#             return redirect(return_path)
-#             response.set_cookie(post_id, 'add_like internal info')
-#             return response
-#     except ObjectDoesNotExist:
-#         raise Http404
-#     return redirect('/')
+def post_by_tag(request, tag_name):
+    context = {}
+    context = {'post_by_tag_list': Post.objects.filter(tags__name=tag_name)}
+
+    return render_to_response('posts_by_tag.html', context)

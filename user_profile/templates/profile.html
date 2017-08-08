@@ -1,0 +1,40 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+
+{% block profile %}
+<p align="center">Profile</p>
+ {% if profile.user_photo %}
+   <img src="{{MEDIA_URL}}{{profile.user_photo.url}}" height="250" width="250">
+<hr>
+ {% endif %}
+<p> Total posts: {{ user_post_counter }} </p>
+<p>Username: {{ user.username }} </p>
+<p>Phone number: {{ profile.user_phone }} </p>
+<p>Email address: {{ profile.user_email }} </p>
+<p>Biography: {{ profile.user_bio }} </p>
+<a href="/members/edit_profile/{{ user_id }}" class="btn btn-info active" role="button" >Edit profile</a>
+<br> <br>
+{% if user_posts %}
+{% for post in user_posts %}
+    <br>
+    <mark>Posted: <small> {{ post.post_data }} </mark> </small>
+    <p>Tags: </p>
+    <h4> <a href="/posts/{{ post.id }}">{{ post.post_title }}</a></h4>
+    <p class="text-justify"> {{ post.post_text|linebreaks|truncatewords:50 }} <strong><a class="text-info" href="/posts/{{ post.id }}"> Read more </a></strong> </p>
+<hr>
+{% endfor %}
+{% else %}
+<p align="center">No posts</p>
+{% endif %}
+
+{% if user_comments %}
+<p align="center">User comments:</p>
+{% for comment in user_comments %}
+  <p>{{ comment.comment_date }}</p>
+  <p>{{ comment.comment_text }}</p>
+    <hr>
+{% endfor %}
+{% else %}
+There is no comments...
+{% endif %}
+{% endblock %}
