@@ -1,18 +1,23 @@
 {% extends 'main.html' %}
+{% load staticfiles %}
 
 {% block login %}
-<form action="/auth/login/" method="POST">
-    {% csrf_token %}
-    <label for="username">Username: </label>
-    <input type="text" name="username" id="username">
-    <br>
-    <label for="password">Password: </label>
-    <input type="password" name="password" id="password">
-
-    {% if login_error %}
-      <label class="error: " {{ login_error }}></label>
-    {% endif %}
-
-    <input class="button" type="submit" value="SignIn">
-    <a href="/auth/register/">Registration</a>
+ <div class="login_form">
+    <form action="/auth/login/" method="POST">
+        {% csrf_token %}
+        <label for="username">Username: </label> <br>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="password">Password: </label> <br>
+        <input type="password" name="password" id="password"> <br><br>
+        <!--<input class="button" type="submit" value="Sign in">-->
+        <button type="submit" class="btn btn-success btn-sm btn-block">Sign in</button>
+        {% if login_error %}
+        <label class="error" {{ login_error }}></label>
+        {% endif %}
+    </form>
+ </div>
+<div class="form_notification">
+    <p>New to our blog? <a href="/auth/register/">Create an acount</a></p>
+</div>
 {% endblock %}

@@ -1,6 +1,7 @@
 {% extends 'main.html' %}
-{% block post %}
+{% load staticfiles %}
 
+{% block post %}
 <br><br>
 <form enctype="multipart/form-data" action="/posts/editpost/{{ post.id }}/" method="post"> {% csrf_token %}
     {{ form.as_p }}

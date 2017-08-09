@@ -1,0 +1,52 @@
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+#footer_block {
+    text-align: right;
+    border-top: 1px #cccccc solid;
+    padding-right: 50px;
+}
+
+#footer_block p {
+    font-size: smaller;
+    font-style: italic;
+}
+
+.login_form {
+    border-radius: 10px; box-shadow: 0 0 0 3px #D3D3D3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 180px;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px 140px 20px;
+}
+
+.form_notification {
+    text-align: center;
+    border-radius: 10px; box-shadow: 0 0 0 3px #D3D3D3;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 350px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px 20px 20px;
+}
+

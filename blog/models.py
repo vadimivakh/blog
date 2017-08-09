@@ -15,7 +15,7 @@ class Post(models.Model):
     post_likes = models.IntegerField(default=0)
     post_views = models.IntegerField(default=0)
     post_img = models.ImageField(null=True, blank=True, upload_to='images/', verbose_name='Image')
-    tags = TaggableManager(blank=True, help_text="Tags:")
+    tags = TaggableManager(blank=True)
 
     def __str__(self):
         return self.post_title
