@@ -3,30 +3,34 @@
 
 {% block post %}
 {% if posts %}
+<div class="info_block">
 <p align="left">Total posts: {{ post_counter }}</p>
 <p align="left">Total users: {{ user_counter }}</p>
-{% for post in posts %}
-    <br>
-    <mark>Posted: <small> {{ post.post_data }} </mark> </small>
-    <!--<p>Author: <a href="/members/{{ post.post_author.id }}">{{ post.post_author }} </a></p>-->
-    <p>Author: {{ post.post_author }} </p>
-    <p>Tags: {% with tags=post.tags.all %}
-                {% for tag in tags %}
-                    {% if not forloop.first %},{% endif %}
-                    <a href="/posts/post_by_tag/tag={{ tag }}/">{{ tag }}</a>
-                {% endfor %}
-            {% endwith %}
-    </p>
+</div>
+<div class="block_posts">
+    {% for post in posts %}
+        <br>
+        <mark>Posted: <small> {{ post.post_data }} </mark> </small>
+        <!--<p>Author: <a href="/members/{{ post.post_author.id }}">{{ post.post_author }} </a></p>-->
+        <p>Author: {{ post.post_author }} </p>
+        <p>Tags: {% with tags=post.tags.all %}
+                    {% for tag in tags %}
+                        {% if not forloop.first %},{% endif %}
+                        <a href="/posts/post_by_tag/tag={{ tag }}/">{{ tag }}</a>
+                    {% endfor %}
+                {% endwith %}
+        </p>
 
-    <h4> <a href="/posts/{{ post.id }}">{{ post.post_title }}</a></h4>
-    <p class="text-justify"> {{ post.post_text|linebreaks|truncatewords:50 }} <strong><a class="text-info" href="/posts/{{ post.id }}"> Read more </a></strong> </p>
-<small><p align="left">Viewed: {{ post.post_views }} times </p></small>
-<hr>
-{% endfor %}
+        <h4> <a href="/posts/{{ post.id }}">{{ post.post_title }}</a></h4>
+        <p class="text-justify"> {{ post.post_text|linebreaks|truncatewords:50 }} <strong><a class="text-info" href="/posts/{{ post.id }}"> Read more </a></strong> </p>
+    <small><p align="left">Viewed: {{ post.post_views }} times </p></small>
+    <hr>
+    {% endfor %}
 
-{% if username %}
-<p>You can add your own post here:</p>
-<br><br>
+    {% if username %}
+    <p>You can add your own post here:</p>
+    <br><br>
+</div>
 <form enctype="multipart/form-data" action="/posts/addpost/" method="post">
     {% csrf_token %}
     {{ form.as_p }}
@@ -51,14 +55,16 @@
 <p>Sorry, but there is no posts...</p>
 
 {% if username %}
-<p>You can add your own post here:</p>
-<br><br>
-<form enctype="multipart/form-data" action="/posts/addpost/" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <p><input type="submit" class="btn btn-primary btn-sm" value="Add post"></p>
-</form>
-{% endif %}
+    <p align="center">You can add your own post here:</p>
+    <br><br>
+    <div class="post_form">
+        <form enctype="multipart/form-data" action="/posts/addpost/" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p><input type="submit" class="btn btn-primary btn-sm" value="Add post"></p>
+        </form>
+    </div>
+    {% endif %}
 
-{% endif %}
+    {% endif %}
 {% endblock %}

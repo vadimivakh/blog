@@ -18,7 +18,6 @@
 {% endif %}
 <hr>
 
-<p><h4>Comments:</h4></p>
 {% for comment in comments %}
     <p>{{ comment.comment_text }}</p>
 <hr>
@@ -26,16 +25,17 @@
 
 {% endfor %}
 <br> <br>
-<strong>Add your comment here:</strong>
 {% if username %}
-<br><br>
-<form action="/posts/addcomment/{{ post.id }}/" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <p><input type="submit" class="btn btn-primary btn-sm" value="Add comment"></p>
-</form>
+<p align="center"><strong>Add your comment here:</strong></p>
+<div class="comment_form">
+        <form action="/posts/addcomment/{{ post.id }}/" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p><input type="submit" class="btn btn-primary btn-sm" value="Add comment"></p>
+        </form>
+</div>
 {% else %}
 <br><br>
-<small><p>You can't write comment, you should <a href="/auth/login/">login</a> or <a href="/auth/register/">register</a></p></small>
+<small><p align="center">You can't write comment, you should <a href="/auth/login/">login</a> or <a href="/auth/register/">register</a></p></small>
 {% endif %}
 {% endblock %}

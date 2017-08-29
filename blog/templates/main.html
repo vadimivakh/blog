@@ -20,15 +20,16 @@
   <div class="row">
          {% if username %}
              <div class="col-md-8" style="background-color: #D3D3D3"> <h2><a href="/"><small> Blog_Django </small></a></h2></div>
-             <div class="col-md-2" style="background-color: #D3D3D3"> <h2><a href="/members/{{ user_id }}"><small> My profile </small></a></h2> </div>
-             <div class="col-md-2" style="background-color: #D3D3D3"> <h2><a href="/auth/logout/"><small> Log-out ({{ username }}) </small></a></h2> </div>
+             <div class="col-md-2" style="background-color: #D3D3D3"> <h2><a href="/members/{{ user_id }}"><small> <img src="/static/profile_img.jpg/" width="20pcx" height="23pcx"> </img>
+                        My profile </small></a></h2> </div>
+            <div class="col-md-2" style="background-color: #D3D3D3"> <h2><a href="/auth/logout/"><small> <img src="/static/log_out.png/" width="20pcx" height="23pcx"> </img>
+                        Sign out ({{ username }}) </small></a></h2> </div>
          {% else %}
              <div class="col-md-10" style="background-color: #D3D3D3"> <h2><a href="/"><small> Blog_Django </small></a></h2></div>
              <div class="col-md-2" style="background-color: #D3D3D3"><h2><a href="/auth/login/"><small>Sign in</small></a><small> or </small>
              <a href="/auth/register/"><small>Sign up</small></a></h2></div>
          {% endif %}
  </div>
-<div class="wrapper">
           <div class="content">
             <div class="container">
             {% block post %} {% endblock %}
@@ -53,13 +54,15 @@
          <div class="container">
             {% block posts_by_tag %} {% endblock %}
           </div>
+
+              <div class="container">
+            {% block posts_by_user %} {% endblock %}
           </div>
-         <div>
-  <div class="footer">
-    <div id="footer_block">
-        <p>All Rights reserved</p>
-</div>
-</div>
-</div>
+
+                <div class="container">
+            {% block comments_by_user %} {% endblock %}
+          </div>
+          </div>
+ </div>
 </body>
 </html>

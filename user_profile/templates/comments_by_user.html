@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+
+{% block comments_by_user %}
+    {% if user_comments %}
+        {% for comment in user_comments %}
+            <mark>Date: <small>{{ comment.comment_date }}</mark> </small>
+            <p>{{ comment.comment_text }}</p>
+            <hr><br>
+        {% endfor %}
+    {% else %}
+        <p>Sorry, but there is no comments...</p>
+    {% endif %}
+{% endblock %}

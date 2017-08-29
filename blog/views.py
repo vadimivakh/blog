@@ -108,5 +108,6 @@ def delete_post(request, post_id):
 def post_by_tag(request, tag_name):
     context = {}
     context = {'post_by_tag_list': Post.objects.filter(tags__name=tag_name)}
+    context['tag_name'] = tag_name
 
     return render_to_response('posts_by_tag.html', context)

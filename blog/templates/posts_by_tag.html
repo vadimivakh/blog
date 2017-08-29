@@ -2,11 +2,16 @@
 {% load staticfiles %}
 
 {% block posts_by_tag %}
-
+<p align="center"><strong> Tag "{{ tag_name }}": </strong></p>
 {% for post in post_by_tag_list %}
-    <p>{{ post.post_title }}</p>
-    <p>{{ post.post_text }}</p>
-    <hr>
+    <!--<p>Title: {{ post.post_title }}</p>-->
+    <!--<p> {{ post.post_text }}</p>-->
+    <!--<hr>-->
+<mark>Date: <small>{{ post.post_data }}</mark> </small>
+<p>Author: {{ post.post_author }} </p>
+<h4 aligh="center"> {{ post.post_title }} </h4>
+<p class="text-justify"> {{ post.post_text|linebreaks|truncatewords:30 }}<a class="text-info" href="/posts/{{ post.id }}"> Read more </a></strong> </p>
+<hr><br>
 {% endfor %}
 
 {% endblock %}

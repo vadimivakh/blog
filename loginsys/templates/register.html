@@ -2,11 +2,11 @@
 {% load staticfiles %}
 
 {% block register %}
-<p> Registration: </p>
-<form enctype="multipart/form-data" action="/auth/register/" method="post">
-    {% csrf_token %}
-    {{ form_user.as_p }}
-    {{ form_profile.as_p }}
-    <input class="button" type="submit" value="Send">
-</form>
+
+    <form enctype="multipart/form-data" action="/auth/register/" method="post">
+        {% csrf_token %}
+        {{ form_user.as_p }}
+        {{ form_profile.as_p }}
+        <input class="button" type="submit" value="Send">
+    </form>
 {% endblock %}
