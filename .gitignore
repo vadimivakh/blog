@@ -1,1 +1,5 @@
-12.py
+*.pyc
+__pycache__
+virtual_env
+dlog_db.sqlite3
+.DS_Store
