@@ -4,6 +4,7 @@ from django.contrib import auth
 from django.contrib.auth.forms import UserCreationForm
 from .forms import UserProfileForm
 
+
 def login(request):
     args = {}
     args.update(csrf(request))
@@ -23,8 +24,8 @@ def login(request):
 
 def logout(request):
     auth.logout(request)
-    return_path = request.META.get('HTTP_REFERER', '/')
-    return redirect(return_path)
+    # return_path = request.META.get('HTTP_REFERER', '/')
+    return redirect("/")
 
 
 def register(request):

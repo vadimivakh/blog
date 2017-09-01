@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block posts_by_tag %}
-<p align="center"><strong> Tag "{{ tag_name }}": </strong></p>
+<p align="center"><strong> Posts with tag "{{ tag_name }}": </strong></p>
 {% for post in post_by_tag_list %}
     <!--<p>Title: {{ post.post_title }}</p>-->
     <!--<p> {{ post.post_text }}</p>-->

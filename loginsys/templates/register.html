@@ -2,11 +2,16 @@
 {% load staticfiles %}
 
 {% block register %}
-
+<br>
+<div class="register_form">
     <form enctype="multipart/form-data" action="/auth/register/" method="post">
         {% csrf_token %}
         {{ form_user.as_p }}
         {{ form_profile.as_p }}
-        <input class="button" type="submit" value="Send">
+        <button type="submit" class="btn btn-success btn-sm btn-block">Create your account</button>
+        <hr>
+        <p align="center"><small>By creating an account, you agree to Blog's Conditions of Use and Privacy Notice.</small></p>
     </form>
+</div>
+<br>
 {% endblock %}

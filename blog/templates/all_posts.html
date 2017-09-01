@@ -4,9 +4,10 @@
 {% block post %}
 {% if posts %}
 <div class="info_block">
-<p align="left">Total posts: {{ post_counter }}</p>
-<p align="left">Total users: {{ user_counter }}</p>
+    <p align="left">Total posts: {{ post_counter }}</p>
+    <p align="left">Total users: {{ user_counter }}</p>
 </div>
+
 <div class="block_posts">
     {% for post in posts %}
         <br>
@@ -26,16 +27,20 @@
     <small><p align="left">Viewed: {{ post.post_views }} times </p></small>
     <hr>
     {% endfor %}
-
-    {% if username %}
-    <p>You can add your own post here:</p>
-    <br><br>
 </div>
-<form enctype="multipart/form-data" action="/posts/addpost/" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <p><input type="submit" class="btn btn-primary btn-sm" value="Add post"</p>
-</form>
+    {% if username %}
+    <p align="center">You can add own post here:</p>
+    <br>
+<div class="post_form">
+        <form enctype="multipart/form-data" action="/posts/addpost/" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <hr>
+            <div class="post_creation_button">
+                <p><input type="submit" class="btn btn-primary btn-sm" value="Add post"</p>
+             <div>
+        </form>
+</div><br>
 {% endif %}
 
 <div class="class="col-md-12"><div class="top-cover center-block"></div><p class="top-name center-block text-center">
@@ -54,17 +59,20 @@
 {% else %}
 <p>Sorry, but there is no posts...</p>
 
-{% if username %}
-    <p align="center">You can add your own post here:</p>
-    <br><br>
-    <div class="post_form">
-        <form enctype="multipart/form-data" action="/posts/addpost/" method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <p><input type="submit" class="btn btn-primary btn-sm" value="Add post"></p>
-        </form>
-    </div>
+    {% if username %}
+        <p align="center">You can add own post here:</p>
+            <br>
+            <div class="post_form">
+                <form enctype="multipart/form-data" action="/posts/addpost/" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <hr>
+                    <div class="post_creation_button">
+                        <button type="submit" class="btn btn-success btn-sm btn-block" style="width:250Px;height:30Px">Create post</button>
+                 <div>
+                </form>
+            </div><br>
     {% endif %}
 
-    {% endif %}
+{% endif %}
 {% endblock %}

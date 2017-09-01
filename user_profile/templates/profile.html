@@ -9,11 +9,12 @@
         <img src="/static/no_photo.jpg" height="250" width="250">
      {% endif %}
     <br><br>
-    <p><b>Total posts: </b> {{ user_post_counter }} </p>
     <p><b>Username: </b>{{ user.username }} </p>
+    <p><b>Total posts: </b> {{ user_post_counter }} </p>
+    <p><b>Age: </b>{{ profile.user_age }} </p>
+    <p><b>From: </b>{{ profile.user_country }} </p>
     <p><b>Phone number: </b>{{ profile.user_phone }} </p>
     <p><b>Email address: </b>{{ profile.user_email }} </p>
-    <p><b>Biography: </b>{{ profile.user_bio }} </p> <br>
     <a href="/members/edit_profile/{{ user_id }}" class="btn btn-info active" role="button" >Edit profile</a>
     <a href="/members/delete_profile/user_id={{ user_id }}" class="btn btn-danger active" role="button" >Delete profile</a>
     <br>

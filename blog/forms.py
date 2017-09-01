@@ -28,8 +28,21 @@ class PostForm(ModelForm):
                     "post_img": "Add image:",
                     "tags": "Tags"}
         widgets = {
-            'post_title': Textarea(attrs={'cols': 70, 'rows': 1}),
-            'post_text': Textarea(attrs={'cols': 70, 'rows': 5}),
-            'tags': Textarea(attrs={'cols': 40, 'rows': 1}),
+            'post_title': Textarea(attrs={'cols': 55, 'rows': 1}),
+            'post_text': Textarea(attrs={'cols': 55, 'rows': 5}),
+            'tags': Textarea(attrs={'cols': 55, 'rows': 1}),
         }
 
+class EditPostForm(ModelForm):
+    class Meta:
+        model = Post
+
+        fields = ['post_title',
+                  'post_text',
+                  'post_img']
+        labels = {"post_title": "Title:",
+                    "post_text": "Text:",
+                    "post_img": "Add image:"}
+        widgets = {
+            'post_title': Textarea(attrs={'cols': 100, 'rows': 1}),
+            'post_text': Textarea(attrs={'cols': 100, 'rows': 20})}

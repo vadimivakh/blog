@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 from django.http.response import HttpResponse
 from django.shortcuts import render_to_response, redirect
 from blog.models import Post, Comment
-from blog.forms import CommentForm, PostForm
+from blog.forms import CommentForm, PostForm, EditPostForm
 from django.template.context_processors import csrf
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.template import RequestContext
@@ -89,10 +89,11 @@ def edit_post(request, post_id):
     args.update(csrf(request))
     post = Post.objects.get(id=post_id)
     args['post'] = post
-    args['form'] = PostForm(instance=post)
+    args['form'] = EditPostForm(instance=post)
+    args['username'] = auth.get_user(request).username
 
     if request.POST:
-        form = PostForm(request.POST, request.FILES, instance=post)
+        form = EditPostForm(request.POST, request.FILES, instance=post)
         if form.is_valid():
             form.save()
             return redirect('/posts/{}/'.format(post_id))
@@ -109,5 +110,6 @@ def post_by_tag(request, tag_name):
     context = {}
     context = {'post_by_tag_list': Post.objects.filter(tags__name=tag_name)}
     context['tag_name'] = tag_name
+    context['username'] = auth.get_user(request).username
 
     return render_to_response('posts_by_tag.html', context)
