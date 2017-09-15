@@ -1,3 +1,5 @@
-django
-pillow
-django-taggit
+Django==1.11.2
+django-taggit==0.22.1
+pillow==4.1.1
+pytz==2017.2
+whitenoise
