@@ -1,335 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38d4ac81-aa0c-479a-80d3-afabd3a8b42f" name="Default" comment="commit for deploy">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/static/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/static/like_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog_db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/10609914.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/10609914_0EjzrLx.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/10609914_DjCS.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/10609914_bQLYVeJ.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/220px-Ward_Cunningham_-_Commons-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/3927.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/3927_yXpwMJX.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/NSFNET-backbone-T3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1_6IR42EL.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1_ADkgrFM.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1_DkpcZwG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1_HNuulUh.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1_La0cOuW.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1_WgOpboz.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1_Wip1g1m.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1_lJQylDY.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1_q5vULhi.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/img_1_uCHvPUQ.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/internet.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/internet_zET2Fve.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/images/python-logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/users_photo/10609914.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/users_photo/10609914_BcmaKQm.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/users_photo/220px-Ward_Cunningham_-_Commons-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/users_photo/220px-Ward_Cunningham_-_Commons-1_JBxE1KM.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/users_photo/220px-Ward_Cunningham_-_Commons-1_qb2Nqyw.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/users_photo/220px-Ward_Cunningham_-_Commons-1_uhKOqbs.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/users_photo/img_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/users_photo/man.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/loginsys/migrations/0001_initial.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/easy-install.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/EGG-INFO/PKG-INFO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/EGG-INFO/SOURCES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/EGG-INFO/dependency_links.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/EGG-INFO/entry_points.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/EGG-INFO/not-zip-safe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/EGG-INFO/pbr.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/EGG-INFO/requires.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/EGG-INFO/top_level.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/__main__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/_markerlib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/_markerlib/markers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/adapter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/cache.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/caches/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/caches/file_cache.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/caches/redis_cache.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/controller.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/filewrapper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/heuristics.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/serialize.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/cachecontrol/wrapper.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/colorama/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/colorama/ansi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/colorama/ansitowin32.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/colorama/initialise.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/colorama/win32.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/colorama/winterm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/_backport/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/_backport/misc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/_backport/shutil.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/_backport/sysconfig.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/_backport/sysconfig.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/_backport/tarfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/database.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/index.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/locators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/manifest.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/markers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/metadata.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/resources.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/scripts.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/t32.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/t64.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/util.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/w32.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/w64.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/distlib/wheel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/constants.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/filters/_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/filters/alphabeticalattributes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/filters/inject_meta_charset.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/filters/lint.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/filters/optionaltags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/filters/sanitizer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/filters/whitespace.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/html5parser.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/ihatexml.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/inputstream.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/sanitizer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/serializer/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/serializer/htmlserializer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/tokenizer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treeadapters/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treeadapters/sax.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treebuilders/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treebuilders/_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treebuilders/dom.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treewalkers/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treewalkers/_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treewalkers/dom.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treewalkers/etree.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treewalkers/genshistream.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treewalkers/lxmletree.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/treewalkers/pulldom.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/trie/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/trie/_base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/trie/datrie.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/trie/py.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/ipaddress.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/lockfile/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/lockfile/linklockfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/lockfile/mkdirlockfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/lockfile/pidlockfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/lockfile/sqlitelockfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/lockfile/symlinklockfile.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/packaging/__about__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/packaging/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/packaging/_compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/packaging/_structures.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/packaging/specifiers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/packaging/version.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/pkg_resources/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/progress/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/progress/bar.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/progress/counter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/progress/helpers.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/progress/spinner.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/re-vendor.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/adapters.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/api.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/auth.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/cacert.pem" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/certs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/cookies.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/exceptions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/hooks.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/big5freq.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/big5prober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/chardetect.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/chardistribution.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/charsetgroupprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/charsetprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/codingstatemachine.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/compat.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/constants.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/cp949prober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/escprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/escsm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/eucjpprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/euckrfreq.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/euckrprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/euctwfreq.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/euctwprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/gb2312freq.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/gb2312prober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/hebrewprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/jisfreq.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/jpcntx.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/langbulgarianmodel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/langcyrillicmodel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/langgreekmodel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/langhebrewmodel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/langhungarianmodel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/langthaimodel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/latin1prober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcharsetprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcsgroupprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/mbcssm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/sbcharsetprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/sbcsgroupprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/sjisprober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/universaldetector.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/chardet/utf8prober.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/_collections.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/connection.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/connectionpool.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/ntlmpool.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/contrib/pyopenssl.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/exceptions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/fields.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/filepost.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/ordered_dict.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/six.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/poolmanager.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/request.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/response.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/connection.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/request.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/response.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/retry.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/ssl_.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/timeout.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/packages/urllib3/util/url.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/sessions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/status_codes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/structures.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/requests/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/retrying.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/six.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/basecommand.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/baseparser.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/cmdoptions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/commands/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/commands/completion.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/commands/freeze.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/commands/help.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/commands/install.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/commands/list.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/commands/search.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/commands/show.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/commands/uninstall.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/commands/wheel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/compat/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/compat/dictconfig.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/download.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/exceptions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/index.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/locations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/models/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/models/index.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/operations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/operations/freeze.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/pep425tags.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/req/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/req/req_file.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/req/req_install.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/req/req_set.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/req/req_uninstall.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/status_codes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/utils/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/utils/appdirs.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/utils/build.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/utils/deprecation.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/utils/filesystem.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/utils/logging.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/utils/outdated.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/utils/ui.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/vcs/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/vcs/bazaar.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/vcs/git.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/vcs/mercurial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/vcs/subversion.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/wheel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/setuptools-18.1-py3.6.egg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/setuptools.pth" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Lib/tcl8.6/init.tcl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/Activate.ps1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_asyncio.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_bz2.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_ctypes.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_ctypes_test.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_decimal.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_elementtree.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_hashlib.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_lzma.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_msi.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_multiprocessing.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_overlapped.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_socket.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_sqlite3.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_ssl.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_testbuffer.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_testcapi.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_testconsole.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_testimportmultiple.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_testmultiphase.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/_tkinter.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/activate.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/deactivate.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/easy_install-3.6-script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/easy_install-3.6.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/easy_install-3.6.exe.manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/easy_install-script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/easy_install.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/easy_install.exe.manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pip-script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pip.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pip.exe.manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pip3-script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pip3.6-script.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pip3.6.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pip3.6.exe.manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pip3.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pip3.exe.manifest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pyexpat.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/python.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/python3.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/python36.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/pythonw.exe" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/select.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/sqlite3.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/tcl86t.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/tk86t.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/unicodedata.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/vcruntime140.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/Scripts/winsound.pyd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/virtual_env/pyvenv.cfg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requirements" afterPath="$PROJECT_DIR$/requirements" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/virtual_env/Lib/site-packages/pip-7.1.0-py3.6.egg/pip/_vendor/html5lib/filters/__init__.py" afterPath="$PROJECT_DIR$/easy_install" />
+    <list default="true" id="38d4ac81-aa0c-479a-80d3-afabd3a8b42f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/blog_django.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -813,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504250528564</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="commit without virtual_env">
+      <created>1505468482807</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1505468482807</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -826,7 +510,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6693679" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20745543" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -900,7 +584,8 @@
     <MESSAGE value="improved forms" />
     <MESSAGE value="final edition" />
     <MESSAGE value="commit for deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit for deploy" />
+    <MESSAGE value="commit without virtual_env" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit without virtual_env" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
