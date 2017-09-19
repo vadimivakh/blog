@@ -2,14 +2,19 @@
 {% load staticfiles %}
 
 {% block posts_by_user %}
-    {% if user_posts %}
-        {% for post in user_posts %}
-            <mark>Date: <small>{{ post.post_data }}</mark> </small>
-            <h4 align="center"> {{ post.post_title }} </h4>
-            <p class="text-justify"> {{ post.post_text|linebreaks|truncatewords:30 }}<a class="text-info" href="/posts/{{ post.id }}"> Read more </a></strong> </p>
-            <hr><br>
-        {% endfor %}
-    {% else %}
-        <p>Sorry, but there is no posts...</p>
-    {% endif %}
+{% if user_posts %}
+{% for post in user_posts %}
+<mark>Date:
+    <small>{{ post.data }}</small>
+</mark>
+<h4 align="center"> {{ post.title }} </h4>
+<p class="text-justify"> {{ post.text|linebreaks|truncatewords:30 }}<a class="text-info"
+                                                                            href="{% url 'post_by_id' post.id %}"> Read
+    more </a>
+</p>
+<hr><br>
+{% endfor %}
+{% else %}
+<p>Sorry, but user haven't posts...</p>
+{% endif %}
 {% endblock %}

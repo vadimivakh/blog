@@ -35,7 +35,6 @@ def register(request):
     args['form_profile'] = UserProfileForm()
 
     if request.POST:
-        print (request.POST)
         new_user_form = UserCreationForm(request.POST)
         new_user_profile = UserProfileForm(request.POST, request.FILES)
 

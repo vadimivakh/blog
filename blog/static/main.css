@@ -147,9 +147,12 @@ html, body {
 }
 
 .post_foto {
+    border:1px solid #CCC;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
     float:left;
     margin: 4px 10px 2px 0px;
-    border:1px solid #CCC;
     padding:6px;
 }
 

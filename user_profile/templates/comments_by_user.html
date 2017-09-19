@@ -2,13 +2,15 @@
 {% load staticfiles %}
 
 {% block comments_by_user %}
-    {% if user_comments %}
-        {% for comment in user_comments %}
-            <mark>Date: <small>{{ comment.comment_date }}</mark> </small>
-            <p>{{ comment.comment_text }}</p>
-            <hr><br>
-        {% endfor %}
-    {% else %}
-        <p>Sorry, but there is no comments...</p>
-    {% endif %}
+{% if user_comments %}
+{% for comment in user_comments %}
+<mark>Date:
+    <small>{{ comment.date }}</small>
+</mark>
+<p>{{ comment.text }}</p>
+<hr><br>
+{% endfor %}
+{% else %}
+<p>Sorry, but there is no comments...</p>
+{% endif %}
 {% endblock %}

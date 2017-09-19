@@ -9,9 +9,9 @@ class CommentForm(ModelForm):
     class Meta:
         model = Comment
 
-        fields = ['comment_text']
+        fields = ['text']
         widgets = {
-            'comment_text': Textarea(attrs={'cols': 40, 'rows': 3}),
+            'text': Textarea(attrs={'cols': 40, 'rows': 3}),
         }
 
 
@@ -19,17 +19,17 @@ class PostForm(ModelForm):
     class Meta:
         model = Post
 
-        fields = ['post_title',
-                  'post_text',
-                  'post_img',
+        fields = ['title',
+                  'text',
+                  'img',
                   'tags']
-        labels = {"post_title": "Title:",
-                    "post_text": "Text:",
-                    "post_img": "Add image:",
+        labels = {"title": "Title:",
+                    "text": "Text:",
+                    "img": "Add image:",
                     "tags": "Tags"}
         widgets = {
-            'post_title': Textarea(attrs={'cols': 55, 'rows': 1}),
-            'post_text': Textarea(attrs={'cols': 55, 'rows': 5}),
+            'title': Textarea(attrs={'cols': 55, 'rows': 1}),
+            'text': Textarea(attrs={'cols': 55, 'rows': 5}),
             'tags': Textarea(attrs={'cols': 55, 'rows': 1}),
         }
 
@@ -37,12 +37,12 @@ class EditPostForm(ModelForm):
     class Meta:
         model = Post
 
-        fields = ['post_title',
-                  'post_text',
-                  'post_img']
-        labels = {"post_title": "Title:",
-                    "post_text": "Text:",
-                    "post_img": "Add image:"}
+        fields = ['title',
+                  'text',
+                  'img']
+        labels = {"title": "Title:",
+                    "text": "Text:",
+                    "img": "Add image:"}
         widgets = {
-            'post_title': Textarea(attrs={'cols': 100, 'rows': 1}),
-            'post_text': Textarea(attrs={'cols': 100, 'rows': 20})}
+            'title': Textarea(attrs={'cols': 100, 'rows': 1}),
+            'text': Textarea(attrs={'cols': 100, 'rows': 20})}

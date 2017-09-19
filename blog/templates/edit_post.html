@@ -4,7 +4,7 @@
 {% block post %}
 <br><br>
     <div class="edit_post_form">
-            <form enctype="multipart/form-data" action="/posts/editpost/{{ post.id }}/" method="post"> {% csrf_token %}
+            <form enctype="multipart/form-data" action="{% url 'editpost' post.id %}" method="post"> {% csrf_token %}
                 {{ form.as_p }}
                 <hr>
                 <div class="submit_save_button">

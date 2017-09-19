@@ -4,7 +4,7 @@
 {% block register %}
 <br>
 <div class="register_form">
-    <form enctype="multipart/form-data" action="/auth/register/" method="post">
+    <form enctype="multipart/form-data" action="{% url 'register' %}" method="post">
         {% csrf_token %}
         {{ form_user.as_p }}
         {{ form_profile.as_p }}

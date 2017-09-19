@@ -5,16 +5,15 @@ from taggit.managers import TaggableManager
 
 
 class Post(models.Model):
-    class Meta:
-        db_table = "post"
+    # class Meta:
+    #     db_table = "post"
 
-    post_title = models.CharField(max_length=100)
-    post_text = models.TextField()
-    post_data = models.DateTimeField(auto_now_add=True)
-    post_author = models.ForeignKey(User, default="")
-    post_likes = models.IntegerField(default=0)
-    post_views = models.IntegerField(default=0)
-    post_img = models.ImageField(null=True, blank=True, upload_to='images/', verbose_name='Image')
+    title = models.CharField(max_length=100)
+    text = models.TextField()
+    data = models.DateTimeField(auto_now_add=True)
+    author = models.ForeignKey(User, default="")
+    views = models.IntegerField(default=0)
+    img = models.ImageField(null=True, blank=True, upload_to='images/', verbose_name='Image')
     tags = TaggableManager(blank=True)
 
     def __str__(self):
@@ -22,10 +21,10 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    class Meta:
-        db_table = "comments"
+    # class Meta:
+    #     db_table = "comments"
 
-    comment_date = models.DateField(u'date', auto_now=True)
-    comment_text = models.TextField(verbose_name=None)
+    date = models.DateTimeField(u'date', auto_now=True)
+    text = models.TextField()
     comment_post = models.ForeignKey(Post)
-    comment_author = models.ForeignKey(User, default="")
+    comment_author = models.ForeignKey(User, null=True)
