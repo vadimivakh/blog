@@ -28,6 +28,7 @@ html, body {
 }
 
 .login_form {
+    background-color: #DCDCDC;
     border-radius: 10px; box-shadow: 0 0 0 3px #D3D3D3;
     position: absolute;
     top: 50%;
@@ -39,6 +40,7 @@ html, body {
 }
 
 .form_notification {
+    background-color: #DCDCDC;
     text-align: center;
     border-radius: 10px; box-shadow: 0 0 0 3px #D3D3D3;
     position: absolute;
@@ -51,12 +53,14 @@ html, body {
 }
 
 .join_message {
+    background-color: #DCDCDC;
     padding-left: 2cm;
     font-size: 16pt;
     font-weight: normal;
 }
 
 .info_block {
+    background-color: #DCDCDC;
     border-radius: 10px; box-shadow: 0 0 0 3px #D3D3D3;
     position: absolute;
     top: 17%;
@@ -112,6 +116,7 @@ html, body {
 }
 
 .comment_form {
+    background-color: #DCDCDC;
     border-radius: 10px; box-shadow: 0 0 0 3px #D3D3D3;
     width: 350px;
     height: 170px;
@@ -121,6 +126,7 @@ html, body {
 }
 
 .post_form {
+    background-color: #DCDCDC;
     position: relative;
     border-radius: 10px; box-shadow: 0 0 0 3px #D3D3D3;
     width: 450px;
@@ -133,10 +139,11 @@ html, body {
 .post_creation_button {
     position: absolute;
     top: 91%;
-    left: 23%;
+    left: 40%;
 }
 
 .register_form {
+    background-color: #DCDCDC;
     border-radius: 10px; box-shadow: 0 0 0 3px #D3D3D3;
     width: 450px;
     height: 750px;
@@ -157,6 +164,7 @@ html, body {
 }
 
 .edit_post_form {
+    background-color: #DCDCDC;
     position: relative;
     border-radius: 10px; box-shadow: 0 0 0 3px #D3D3D3;
     width: 760px;
@@ -173,6 +181,7 @@ html, body {
 }
 
 .edit_profile_form {
+    background-color: #DCDCDC;
     position: relative;
     border-radius: 10px; box-shadow: 0 0 0 3px #D3D3D3;
     width: 450px;

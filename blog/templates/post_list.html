@@ -1,0 +1,83 @@
+{% extends 'main.html' %}
+{% load staticfiles %}
+
+{% block post %}
+{% if post_list %}
+
+<div class="info_block">
+    <p align="left">Total posts: {{ post_counter }}</p>
+    <p align="left">Total users: {{ user_counter }}</p>
+</div>
+
+<div class="block_posts">
+    {% for post in post_list %}
+    <br>
+    <mark>Posted:
+        <small> {{ post.data }}
+    </mark>
+    </small>
+    <p>Author: {{ post.author }} </p>
+    <p>Tags: {% with tags=post.tags.all %}
+        {% for tag in tags %}
+        {% if not forloop.first %},{% endif %}
+        <a href="{% url 'post_by_tag' tag %}">{{ tag }}</a>
+        {% endfor %}
+        {% endwith %}
+    </p>
+
+    <h4><a href="{% url 'post_by_id' post.id %}">{{ post.title }}</a></h4>
+    <p class="text-justify"> {{ post.text|linebreaks|truncatewords:50 }} <strong><a class="text-info"
+                                                                                    href="{% url 'post_by_id' post.id %}">
+        Read more </a></strong></p>
+    <small><p align="left">Viewed: {{ post.views }} times </p></small>
+    <hr>
+    {% endfor %}
+</div>
+{% if username %}
+<p align="center">You can add own post here:</p>
+<br>
+<div class="post_form">
+    <form enctype="multipart/form-data" action="{% url 'add_post' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <hr>
+        <div class="post_creation_button">
+            <p><input type="submit" class="btn btn-primary btn-sm" value="Add post"</p>
+            <div>
+    </form>
+</div><br>
+{% endif %}
+
+{% if is_paginated %}
+<p class="text-center">
+    <br><br>
+       {% if page_obj.has_previous %}
+            <button type="button" class="btn btn-default btn-xs">
+            <a href="?page={{ page_obj.previous_page_number }}">Previous</a></button>
+        {% endif %}
+            Page {{ page_obj.number }} from {{ paginator.num_pages }}.
+            {% if page_obj.has_next %}
+            <button type="button" class="btn btn-default btn-xs">
+                <a href="?page={{ page_obj.next_page_number }}">Next</a></button>
+            {% endif %}        
+        {% endif %}</p>
+{% else %}
+<p>Sorry, but there is no posts...</p>
+{% if username %}
+<p align="center">You can add own post here:</p>
+<br>
+<div class="post_form">
+    <form enctype="multipart/form-data" action="{% url 'add_post' %}" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <hr>
+        <div class="post_creation_button">
+            <button type="submit" class="btn btn-success btn-sm btn-block" style="width:250Px;height:30Px">Create post
+            </button>
+            <div>
+    </form>
+</div><br>
+{% endif %}
+
+{% endif %}
+{% endblock %}

@@ -12,4 +12,3 @@ class UserProfile(models.Model):
     email = models.EmailField(verbose_name="E-mail address")
     country = models.TextField(blank=True, null=True, verbose_name="From")
     photo = models.ImageField(null=True, blank=True, upload_to='users_photo/', verbose_name='Avatar')
-

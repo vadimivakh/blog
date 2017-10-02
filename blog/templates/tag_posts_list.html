@@ -3,12 +3,11 @@
 
 {% block posts_by_tag %}
 <p align="center"><strong> Posts with tag "{{ tag_name }}": </strong></p>
-{% for post in post_by_tag_list %}
+{% for post in tag_list %}
 <mark>Date: <small>{{ post.data }}</mark> </small>
 <p>Author: {{ post.author }} </p>
 <h4 aligh="center"> {{ post.title }} </h4>
 <p class="text-justify"> {{ post.text|linebreaks|truncatewords:30 }}<a class="text-info" href="{% url 'post_by_id' post.id %}"> Read more </a></strong> </p>
 <hr><br>
 {% endfor %}
-
 {% endblock %}

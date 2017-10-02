@@ -10,6 +10,7 @@ from django.contrib import auth
 from django.template.context_processors import csrf
 from loginsys.forms import UserProfileForm
 from django.http import Http404
+from django.views.generic.base import TemplateView
 
 
 def user_profile(request, user_id):
@@ -30,8 +31,8 @@ def user_profile(request, user_id):
     context['profile'] = profile
     context['username'] = auth.get_user(request).username
     context['user_id'] = request.user.id
-    context['user_posts'] = Post.objects.filter(author = request.user.id).order_by('-data')
-    context['user_post_counter'] = Post.objects.filter(author = request.user.id).count()
+    context['user_posts'] = Post.objects.filter(author=request.user.id).order_by('-data')
+    context['user_post_counter'] = Post.objects.filter(author=request.user.id).count()
     context['user_comments'] = Comment.objects.filter(comment_author_id=user_id)
     return render_to_response('profile.html', context)
 
@@ -54,13 +55,14 @@ def edit_user_profile(request, user_id):
     return render_to_response('edit_profile.html', context)
 
 
-def user_posts(request, user_id):
-    context = {}
-    context.update(csrf(request))
-    context['user_id'] = request.user.id
-    context['user_posts'] = Post.objects.filter(author=request.user.id).order_by('-data')
-    context['username'] = auth.get_user(request).username
-    return render_to_response('posts_by_user.html', context)
+class UserPostList(TemplateView):
+    template_name = 'user_post_list.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(UserPostList, self).get_context_data(**kwargs)
+        context['user_posts_list'] = Post.objects.filter(author=self.request.user.id).order_by('-data')
+        context['username'] = auth.get_user(self.request).username
+        return context
 
 
 def user_comments(request, user_id):

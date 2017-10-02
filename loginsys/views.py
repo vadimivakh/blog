@@ -3,6 +3,11 @@ from django.template.context_processors import csrf
 from django.contrib import auth
 from django.contrib.auth.forms import UserCreationForm
 from .forms import UserProfileForm
+from django.views.generic import View
+
+
+# from django.http import HttpResponse, HttpResponseRedirect
+# from django.shortcuts import render
 
 
 def login(request):
@@ -22,10 +27,10 @@ def login(request):
         return render_to_response('login.html', args)
 
 
-def logout(request):
-    auth.logout(request)
-    # return_path = request.META.get('HTTP_REFERER', '/')
-    return redirect("/")
+class LogoutView(View):
+    def get(self, request):
+        auth.logout(request)
+        return redirect("/")
 
 
 def register(request):

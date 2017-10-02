@@ -2,8 +2,8 @@
 {% load staticfiles %}
 
 {% block posts_by_user %}
-{% if user_posts %}
-{% for post in user_posts %}
+{% if user_posts_list %}
+{% for post in user_posts_list %}
 <mark>Date:
     <small>{{ post.data }}</small>
 </mark>
